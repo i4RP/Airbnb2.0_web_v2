@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Airbnb2.0</title>
+
+  <link href="../css/main.css" rel="stylesheet"/>
+  <link href="../css/index.css" rel="stylesheet"/>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+  <link href="../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="../vendor/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+  <script type="text/javascript" src="../vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+  <script type="text/javascript" src="../vendor/bootstrap-datepicker/locales/bootstrap-datepicker.ja.min.js"></script>
+  <script type="text/javascript" src="../js/web3.min.js"></script>
+  <script type="text/javascript" src="../js/main.js"></script>
+  <script src="https://unpkg.com/uport-connect/dist/uport-connect.js"></script>
+  <script language="javascript" src="../js/uport.js"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">Airbnb2.0</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <!-- uPortログインボタン -->
+          <li class="nav-item active">
+            <a class="nav-link" href="../index.html">Top
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Become a host</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/mypage.html">MyPage</a>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-sm btn-primary btn-uport" id="connectUportBtn">Connect uPort</button>
+          </li>
+            <li class="nav-item">
+            <p id="userInformation"></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Portfolio Item Heading -->
+      <h1 class="my-4">Page Heading
+        <small>Secondary Text</small>
+      </h1>
+
+      <!-- Portfolio Item Row -->
+      <div class="row">
+
+        <div class="col-md-8">
+          <img class="img-fluid" src="../images/house1.png" alt="">
+        </div>
+
+        <div class="col-md-4">
+          <h3 class="my-3">Reserve a house</h3>
+          <div class="form-group" id="datepicker-daterange">
+            <label class="control-label">Price</label>
+            <p><sp class="houseprice">  0.4 ETH</sp> (per night)</p>
+            </div>
+            <div class="form-group" id="datepicker-daterange">
+            <label class="control-label">Select schedule</label>
+            <div class="col-sm-9 form-inline">
+                <div class="input-daterange input-group" id="datepicker">
+                <span class="input-group-addon">from</span>
+                <input type="text" class="input-sm form-control" name="start" />
+                <span class="input-group-addon">to</span>
+                <input type="text" class="input-sm form-control" name="end" />
+              </div>
+            </div>
+            <!-- <h3 class="my-3">House Description</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p> -->
+          </div>
+          <div class="form-group" >
+            <button class="btn btn-sm btn-primary btn-uport" id="connectUportBtn">予約確認</button>
+          </div>
+
+      </div>
+      <!-- /.row -->
+
+      <!-- Related Projects Row -->
+      <h3 class="my-4">Nearby houses</h3>
+
+      <div class="row">
+
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="#">
+            <img class="img-fluid" src="../images/house4.png" alt="">
+          </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="#">
+            <img class="img-fluid" src="../images/house5.png" alt="">
+          </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="#">
+            <img class="img-fluid" src="../images/house3.png" alt="">
+          </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-4">
+          <a href="#">
+            <img class="img-fluid" src="../images/house2.png" alt="">
+          </a>
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.js"></script>
+
+  </body>
